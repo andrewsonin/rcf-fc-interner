@@ -1,0 +1,25 @@
+[package]
+name = "rcf-fc-interner"
+version = "0.1.0"
+edition = "2024"
+authors = ["Andrew Sonin <sonin.cel@gmail.com>"]
+categories = ["concurrency", "memory-management"]
+keywords = ["interners"]
+description = "Fixed-capacity interner with no contention for read accesses."
+license = "MIT"
+documentation = "https://docs.rs/rcf-fc-interner"
+homepage = "https://github.com/andrewsonin/rcf-fc-interner"
+repository = "https://github.com/andrewsonin/rcf-fc-interner"
+readme = "README.md"
+
+[lints.rust]
+rust_2018_idioms = { level = "warn", priority = 1 }
+unreachable_pub = "warn"
+missing_docs = "warn"
+missing_debug_implementations = "warn"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+
+[dependencies]
+parking_lot = "0.12"
